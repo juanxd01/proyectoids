@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <header>
+        <h1>xD</h1>
+    </header>
+</body>
+
+</html>
+
+<script type="text/javascript">
+const person = {
+    name: "Juan",
+    age: 19,
+    idk: ["ola", "xd"]
+}
+
+console.log(person.age)
+console.log(person.idk[0])
+
+for (pers in person){
+    console.log(`Propiedad: ${pers} Valor: ${person[pers]}`)
+    //console.log(pers) propiedades del objeto
+    //console.log(person[pers]) valor de las propiedas
+}
+console.log(person.idk)
+
+function nombre(){
+
+}
+
+const sum = (num1, num2) => {
+    this.result = num1 + num2
+    return this.result
+}
+
+
+let result = sum(1, 5)
+console.log(result)
+result = sum(3, 5)
+console.log(result)
+
+function invertir(x, y){
+    tx = this.x
+    ty = this.y
+
+    y = tx
+    x = ty
+
+    console.log(`x = ${x} y = ${y}`)
+}
+
+x = 10
+y = 20
+invertir(x, y)
+</script>

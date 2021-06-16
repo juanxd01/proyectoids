@@ -1,0 +1,19 @@
+<script type="text/javascript">
+let datos = [1, 2, 3, 4, 5];
+let ola = 6;
+
+datos.push(ola) //final del array
+datos.unshift(ola) //incio del array
+console.log(Array.isArray(datos))
+console.log(datos.indexOf(3)) //lastIndexOf devuelve la ultima posicion
+//console.log(datos.reverse())
+console.log(datos.join(' ')) //devuelve como string y separa los elementos
+//console.log(datos.splice(3))  //splice(a,b,items) elimina desde la posicion 3
+//console.log(datos.splice(2,2)) //elimina desde la posicion 2 el numero de objetos q eligamos
+console.log(datos.splice(0,0,10))
+//slice(a,b) selecciona los objetos en las posiciones especificadas
+
+for(let dato of datos){
+    console.log(dato)
+}
+</script>
